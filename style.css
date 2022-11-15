@@ -1,0 +1,425 @@
+@import url(`https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap`); 
+
+#index {
+  background-color: burlywood;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: 1px;
+  border-radius: 1px;
+  margin-right: 100px;
+  margin-left: 0px;
+  display: flex;
+  cursor: default;
+}
+
+h4 {
+  float: left;
+}
+
+ul {
+  text-align: left;
+  cursor: default;
+}
+
+img.destra {
+  width: 450px;
+  max-height: 450px;
+  border-radius: 25px;
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+img.sinistra {
+  width: 600px;
+  max-height: 450px;
+  border-radius: 25px;
+  float: left;
+  margin-right: 100px;
+  margin-left: 10px;
+}
+
+img.crudodimare {
+  width: 550px;
+  border-radius: 25px;
+  float: left;
+  margin-right: 90px;
+  margin-left: 10px;
+  min-height: 350px;
+}
+
+em {
+  color: red;
+  size: 10px;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 7;
+  margin-right: 7;
+  text-align: end;
+  position: absolute;
+  color: black;
+  text-decoration: none;
+}
+
+#link {
+  float: right;
+  margin-right: 100px;
+  margin-top: 15px;
+}
+
+#borgobianco {
+  position: fixed;
+  bottom: 10px;
+  top: 450px;
+}
+
+list {
+  list-style: none;
+  cursor: default;
+}
+
+a {
+  color: black;
+}
+
+.header {
+  background-color: burlywood;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  text-align: left;
+  z-index: 10;
+  display: block;
+  bottom: 670px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: burlywood;
+  list-style: none;
+}
+
+#bottoni {
+  background-color: burlywood;
+  margin-left: 0px;
+}
+
+.header ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.header ul a:hover {
+  background-color: #deb899;
+}
+
+ul a:hover {
+  background-color: #deb899;
+}
+
+.header .logo {
+  float: left;
+  font-size: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: default;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background-color: grey;
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before {
+  background-color: grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+  background-color: grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+}
+
+.header li a {
+  padding: 10px 20px;
+  margin-top: 8px;
+}
+
+.header .menu {
+  clear: none;
+  float: right;
+}
+
+#paragrafi2 {
+  margin-right: 80px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+
+.pacchetti{
+  background-color: #0a122b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tiltcard{
+  width: 400px;
+  height: 400px;
+  background: rgba(255,255,255,0.25);
+  margin: 0 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.container{
+  position: relative;
+  background: #2c3e50;
+  width: 310px;
+  padding: 40px 40px 0px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+  z-index: 1111;
+  transition: 0.3s;
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  margin: 0 20px;
+  height: 430px;
+  top: 30px;
+}
+
+.container:hover{
+  padding-bottom: 40px;
+}
+.imgbox{
+  position: relative;
+  width: 100%;
+  height: 260px;
+  z-index: 1;
+  transform: translateZ(50px);
+}
+
+img2{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.9);
+  transition: 0.3s ease-in;
+  object-fit: cover;
+}
+
+.pacchetto1{
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(#3fd1d4, #fff);
+  border-radius: 50%;
+  top: 5%;
+  transition: 0.3s ease-in;
+}
+
+.pacchetto2{
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(#ff0000,tomato);
+  border-radius: 50%;
+  top: 5%;
+  transition: 0.3s ease-in;
+}
+
+.pacchetto3{
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(#36f549,#02f51b);
+  border-radius: 50%;
+  top: 5%;
+  transition: 0.3s ease-in;
+}
+
+.container:hover .pacchetto1{
+  width: 260px;
+  height: 260px;
+}
+
+.container:hover .pacchetto2{
+  width: 260px;
+  height: 260px;
+}
+
+.container:hover .pacchetto3{
+  width: 260px;
+  height: 260px;
+}
+
+.container:hover .imgbox img{
+  transform: scale(1);
+}
+
+.bgtext{
+  position: absolute;
+  font-size: 8em;
+  font-weight: 700;
+  top: 45%;
+  -webkit-text-stroke: 1px #fff;
+  opacity: 0.4;
+  color: transparent;
+  z-index: -1;
+}
+
+.title{
+font-size: 1.4em;
+font-weight: 600;
+text-align: center;
+color: #fff;
+word-spacing: 2px;
+transition: 0.3s ease;
+transform: translateZ(50px);
+cursor: default;
+}
+
+.container:hover  .title{
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+
+.buyselection{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  transform: translateZ(50px);
+  font-family: "Poppins", sans-serif;
+}
+
+.buyselection h2{
+  font-size: 0.8em;
+  color: #fff;
+  transition: 0.3s;
+  transform: translateY(100px);
+  cursor: default;
+  font-family: "Poppins", sans-serif;
+}
+
+.buyselection sup{
+  font-size: 1.2em;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+.buyselection span{
+  font-size: 0.8em;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.buyselection button{
+  padding: 15px 30px;
+  border-radius: 50px;  
+  border: none;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s;
+  transform: translateY(100px);
+  font-family: "Poppins", sans-serif;
+}
+
+.container:hover .buyselection{
+margin-top: 20px;
+font-family: "Poppins", sans-serif;
+}
+
+.container:hover .buyselection h2{
+ transition-delay: 0.2s;
+ transform: translateY(0);
+ font-family: "Poppins", sans-serif;
+}
+
+.container:hover .buyselection button{
+  transition-delay: 0.4s;
+  transform: translateY(0);
+  font-family: "Poppins", sans-serif;
+   }
+
+   .btnpacc{
+    text-decoration: none;
+   }
+
+  
